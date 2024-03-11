@@ -1,0 +1,43 @@
+            1.Storing/Inserting Into:
+        Exampe:
+        INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
+
+        We use the INSERT INTO command, followed by the name of the table to which we want to add data. Then, in parentheses, we put the column names that we will be filling with data. This is followed by the VALUES keyword, which is accompanied by a parentheses enclosed list of the values that correspond to each column name.
+
+            2.Selecting/Reading Data:
+        A basic SELECT statement works like this:
+        SELECT [names of columns we are going to select] FROM [table we are selecting from]; 
+            SELECT * FROM cats; >>>> All columns.
+
+            SELECT name FROM cats; >>>> specific column. for this its name.Iff they are more than one columns to be selected, then separate with  coma.
+
+            SELECT DISTINCT name FROM cats; >>>> used to select unique value when you have duplicate data.
+
+            SELECT * FROM [table name] WHERE [column name] = ["some value in quotes"]; >>>> selecting based on condition.
+
+            SELECT * FROM cats WHERE age < 2; >>> To select specific data.
+
+                
+            3.UPDATE
+        A boilerplate UPDATE statement looks like this:
+
+            UPDATE [table name] SET [column name] = [new value] WHERE [column name] = [value];
+        
+        The UPDATE statement uses a WHERE clause to grab the row you want to update. It identifies the table name you are looking in and resets the data in a particular column to a new value.
+        Example:
+            UPDATE cats SET name = 'Hana' WHERE name = 'Hannah';
+
+        
+            4. Deleting Data:
+        A boilerplate DELETE statement looks like this:
+
+            DELETE FROM [table name] WHERE [column name] = [value];
+        Exampe:
+                DELETE FROM cats WHERE id = 3;
+        
+            
+
+
+
+
+
